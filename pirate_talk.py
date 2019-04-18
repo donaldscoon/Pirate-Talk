@@ -77,7 +77,7 @@ def main():
                 'Out of ideas? HA! Yer a']
 
     tim = 'Cantankerous Tim says:'
-    ned = 'Twitchy Ned says:'
+    pete = 'Black Spot Pete says:'
 
     for i in range(rounds):
         start = random.choice(starters)
@@ -88,7 +88,7 @@ def main():
             print('{} {} {}, {}, {}!!!\n'.format(tim, start, w1, w2, w3))
             time.sleep(5)
         else:
-            print('     {} {} {}, {}, {}!!!\n'.format(ned, start, w1, w2, w3))
+            print(' {} {}, {}, {}!!!\n'.format(pete, start, w1, w2, w3))
             time.sleep(5)
 
     """future implementation make it go through
