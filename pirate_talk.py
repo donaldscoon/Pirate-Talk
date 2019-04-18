@@ -17,16 +17,16 @@ def get_args():
         description='Argparse Python script',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument(
-        'Name  ', metavar='str', help='What shall we call you, ya land lubber')
+    # parser.add_argument(
+    #     'Name  ', metavar='str', help='What shall we call you, ya land lubber')
 
-    parser.add_argument(
-        '-k',
-        '--overlap',
-        help='Number of codons to over lap at begining and end of sequence',
-        metavar='int',
-        type=int,
-        default=3)
+    # parser.add_argument(
+    #     '-k',
+    #     '--overlap',
+    #     help='Number of codons to over lap at begining and end of sequence',
+    #     metavar='int',
+    #     type=int,
+    #     default=3)
 
     return parser.parse_args()
 
@@ -43,13 +43,36 @@ def die(msg='Something bad happened'):
     warn(msg)
     sys.exit(1)
 
+#---------------------------------------------------
+def tim_says():
+
+
 
 # --------------------------------------------------
 def main():
     """Make a jazz noise here"""
     args = get_args()
-    k_value = args.overlap
-    input_file = args.positional
+
+    word1 = """
+    brainless stupid pin-headed blathering
+    donkey-eared bleating idiotic
+    cricket-sized pig-breathed
+    """.strip().split()
+    print(len(word1))
+
+    word2 = """
+    clam-toungued scurvy-ridden cross-eyed
+    grog-abusing barnacle-backed yellow-bellied
+    pus-faced twisted knuckle-dragging
+    """.strip().split()
+    print(len(word2))
+
+    word3 = """
+    waster-of-skin cabin-boy peice-of-filth
+    whale-fart cow-pie bag-of-vomit
+    sack-o'maggots anchor-head swabber
+    """.strip().split()
+    print(len(word3))
 
 
 # --------------------------------------------------
