@@ -25,7 +25,6 @@ def get_args():
         help='Number of rounds in the insult competition',
         metavar='int',
         type=int,
-        default='',
         required=True)
 
     return parser.parse_args()
@@ -62,7 +61,7 @@ def main():
     """.strip().split()
 
     word3 = """
-    waster-of-skin cabin-boy peice-of-filth
+    waste-of-skin cabin-boy peice-of-filth
     whale-fart cow-pie bag-of-vomit
     sack-o'maggots anchor-head swabber
     """.strip().split()
@@ -87,10 +86,10 @@ def main():
         w3 = random.choice(word3)
         if int(i) % 2 == 0:
             print('{} {} {}, {}, {}!!!\n'.format(tim, start, w1, w2, w3))
-            time.sleep(3)
+            time.sleep(5)
         else:
             print('     {} {} {}, {}, {}!!!\n'.format(ned, start, w1, w2, w3))
-            time.sleep(3)
+            time.sleep(5)
 
     """future implementation make it go through
        every possible combo without replication."""
