@@ -1,2 +1,3 @@
-# Pirate-Talk
-Recreation of an infamous insult competition between two scallywags
+Pirate-Talk
+===========
+Recreation of an infamous insult competition between two scallywags. 
