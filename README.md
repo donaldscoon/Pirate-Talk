@@ -5,7 +5,7 @@ Recreation of an infamous insult competition between two scallywags. Output one 
 
 Accepts -r (--rounds) as an argument that sets the number of rounds the insults go back and forth.
 
-
+Inspiration: https://www.youtube.com/watch?v=SLrUpiePR60
 
 ## How to run the program
 ````
