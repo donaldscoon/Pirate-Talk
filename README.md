@@ -1,9 +1,11 @@
 Pirate-Talk
 ===========
 ## Description
-Recreation of an infamous insult competition between two scallywags. Output one insult at a time with 5 seconds between each insult. Featuring Cantankerous Tim and Twitchy Ned.
+Recreation of an infamous insult competition between two scallywags. Output one insult at a time with 5 seconds between each insult. Featuring Cantankerous Tim and Black Spot Pete.
 
 Accepts -r (--rounds) as an argument that sets the number of rounds the insults go back and forth.
+
+
 
 ## How to run the program
 ````
@@ -20,7 +22,7 @@ optional arguments:
 $ python3 pirate_talk.py -r 2
 Cantankerous Tim says: My fresh born lass swears better you, yer a pin-headed, barnacle-backed, peice-of-filth!!!
 
-Twitchy Ned says: You're a cricket-sized, cross-eyed, whale-fart!!!
+ Black Spot Pete says: You're a cricket-sized, cross-eyed, whale-fart!!!
 ````
      
 ## Description of how to run the tests.
