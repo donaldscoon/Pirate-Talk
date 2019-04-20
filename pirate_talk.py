@@ -88,7 +88,7 @@ def main():
             print('{} {} {}, {}, {}!!!\n'.format(tim, start, w1, w2, w3))
             time.sleep(5)
         else:
-            print(' {} {}, {}, {}!!!\n'.format(pete, start, w1, w2, w3))
+            print('{} {} {}, {}, {}!!!\n'.format(pete, start, w1, w2, w3))
             time.sleep(5)
 
     """future implementation make it go through
