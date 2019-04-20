@@ -8,7 +8,7 @@ import re
 import string
 import sys
 
-prg = 'pirate_talk.py'
+prg = './pirate_talk.py'
 
 # --------------------------------------------------
 def test_usage():
@@ -16,13 +16,17 @@ def test_usage():
     assert rv != 0
     assert out.lower().startswith('usage')
 
+# --------------------------------------------------
+def test_bad_number():
+    for r in [-1, 10]:
+        rv, out = getstatusoutput('{} -r {}'.format(prg, r))
+        assert rv > 0
+        assert out == ('"{}" must be greater than zero'.format(r))
+
+
+
 # # -------------------------------------------------
 # def run_it():
 #     """run the program"""y
 #     def test_bad_input():
 #     """fails on bad input"""
-
-#     for pct in [-1, 101]:
-#         rv, out = getstatusoutput('{} -p {} fasta'.format(prg, pct))
-#         assert rv > 0
-#         assert out == '--pct_gc "{}" must be between 0 and 100'.format(pct)

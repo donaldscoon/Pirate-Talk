@@ -48,6 +48,9 @@ def main():
     args = get_args()
     rounds = args.rounds
 
+    if rounds < 0:
+        die('"{}" must be greater than zero'.format(rounds))
+
     word1 = """
     brainless stupid pin-headed blathering
     donkey-eared bleating idiotic
