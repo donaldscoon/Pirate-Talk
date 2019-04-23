@@ -2,6 +2,7 @@
 """tests for pirate-talk.py"""
 
 from subprocess import getstatusoutput
+from subprocess import getoutput
 import os
 import random
 import re
@@ -17,16 +18,16 @@ def test_usage():
     assert out.lower().startswith('usage')
 
 # --------------------------------------------------
-def test_bad_number():
-    for r in [-1, 10]:
-        rv, out = getstatusoutput('{} -r {}'.format(prg, r))
-        assert rv > 0
-        assert out == ('"{}" must be greater than zero'.format(r))
+def test_play11():
+    out = getoutput('{} -r 4 -s 4'.format(prg))
+    expected = """
+Cantankerous Tim says: Har, Har! Methinks you're a donkey-eared, scurvy-ridden, sack-o'maggots!!!
 
+Black Spot Pete says: I have heard worse from'a fish, you're a pin-headed, scurvy-ridden, cabin-boy!!!
 
+Cantankerous Tim says: Yer' a idiotic, knuckle-dragging, cow-pie!!!
 
-# # -------------------------------------------------
-# def run_it():
-#     """run the program"""y
-#     def test_bad_input():
-#     """fails on bad input"""
+Black Spot Pete says: Yer' a blathering, knuckle-dragging, swabber!!!
+
+""".strip()
+    assert out.strip() == expected

@@ -27,6 +27,14 @@ def get_args():
         type=int,
         required=True)
 
+    parser.add_argument(
+        '-s',
+        '--seed',
+        help='helps pass the test',
+        metavar='int',
+        type=int,
+        default=None)
+
     return parser.parse_args()
 
 
@@ -47,6 +55,11 @@ def main():
     """Make a jazz noise here"""
     args = get_args()
     rounds = args.rounds
+    seed = args.seed
+
+    """ADD RANDOM SEED STUFF HERE"""
+    if seed is not None:
+        random.seed(seed)
 
     if rounds < 0:
         die('"{}" must be greater than zero'.format(rounds))
@@ -95,7 +108,8 @@ def main():
             time.sleep(5)
 
     """future implementation make it go through
-       every possible combo without replication."""
+       every possible combo without replication.
+       Random Sample k = 3"""
 
     if rounds > (9*9*9):
         print('That\'s how you swear like a sailor')
