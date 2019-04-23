@@ -28,6 +28,17 @@ Cantankerous Tim says: My fresh born lass swears better you, yer a pin-headed, b
 ## Description of how to run the tests.
 ````
 $ make test
+python3 -m pytest -v test.py
+============================================================================== test session starts==============================================================================
+platform linux -- Python 3.6.7, pytest-4.3.0, py-1.8.0, pluggy-0.9.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/c/Users/Donald/Pirate-Talk, inifile:
+collected 2 items                                                                                                                                                               
+
+test.py::test_usage PASSED                                                                                                                                                [ 50%]
+test.py::test_play11 PASSED                                                                                                                                               [100%]
+
+=========================================================================== 2 passed in 20.53 seconds===========================================================================
 ````
 
 ## Author
